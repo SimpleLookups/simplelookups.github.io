@@ -31,4 +31,4 @@ Full source code is available on [GitHub](https://github.com/rwpcpe/simple-looku
 
 ### License
 
-SimpleLookups is licensed under the BSD 3-clause license. View the license [here](/license.txt).
+SimpleLookups is licensed under the BSD 3-clause license. View the license [here](/License.txt).
