@@ -12,12 +12,12 @@ Abstract class with a base implementation of [```ILookup```](/interfaces/ilookup
 
     using SimpleLookups;
 
-### On This Page
-[Id](#id)  
-[Name](#name)  
-[Description](#description)  
-[Code](#code)  
-[Active](#active)
+### Jump To
+* [Id](#id)  
+* [Name](#name)  
+* [Description](#description)  
+* [Code](#code)  
+* [Active](#active)
 
 ---
 ### Id

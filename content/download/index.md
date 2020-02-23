@@ -4,11 +4,10 @@ date: 2020-02-22T23:09:38-05:00
 draft: false
 ---
 
-
 The current version is 2.0.1, released on May 30, 2016.
 
+[Install via NuGet](http://www.nuget.org/packages/SimpleLookups/) (Recommended)  
 [Download Now](/releases/2.0.1/SimpleLookups-2.0.1.zip)  
-[Install using NuGet](http://www.nuget.org/packages/SimpleLookups/)
 
 
 ### All Versions  
