@@ -24,7 +24,7 @@ To use this feature, follow these steps:
 </configSections>
 ```
 
-2. Add any connection strings as you would normally. See [MSDN](http://msdn.microsoft.com/en-us/library/cc716756(v=vs.110).aspx) for more information about this.
+2. Add any connection strings as you would normally. See [Connection Strings](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ef/connection-strings) for more information about this.
 
 3. Add the ```<simpleLookups>``` element inside of the main ```<configuration>``` element. Like so:
    

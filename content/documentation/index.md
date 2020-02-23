@@ -8,8 +8,13 @@ url: /documentation
 ---
 
 ### Classes
-[SimpleLookups Class](/classes/simplelookups/)  
-[LookupManager Class](/classes/lookupmanager/)  
+[Lookup](/classes/lookup/)  
+[LookupManager](/classes/lookupmanager/)  
+[SimpleLookups](/classes/simplelookups/)  
+
+### Interfaces
+[ILookup](/interfaces/ilookup/)  
+[ILookupManager](/interfaces/ilookupmanager/)  
 
 ### Configuration
 [Creating Configuration Files](/configuration-files/)  

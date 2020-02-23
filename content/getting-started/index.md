@@ -62,6 +62,8 @@ Here's how you use it:
 
 The download package also has a script to create lookup tables if you are at that stage in your project.
 
-[Download](/download/)  
-[View Source Code (GitHub)](https://github.com/rwpcpe/simple-lookups/)  
-[View SimpleLookups API Documentation](/documentation/)
+#### Next Steps
+
+[Download Simple Lookups](/download/)  
+[View Source Code on GitHub](https://github.com/rwpcpe/simple-lookups/)  
+[View Documentation](/documentation/)

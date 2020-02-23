@@ -27,7 +27,7 @@ These links are provided for people who are using older, incompatible versions o
 
 ### Source Code
 
-Full source code is available on [GitHub](https://github.com/rwpcpe/simple-lookups")
+Full source code is available on [GitHub](https://github.com/rwpcpe/simple-lookups)
 
 ### License
 
