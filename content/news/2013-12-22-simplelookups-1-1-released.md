@@ -23,7 +23,3 @@ Changed Features:
 - The method "GetById" is now called "Get".
 - The API will now return IList instead of List.
 
-A few links for the lazy:  
-[Getting Started with SimpleLookups](/getting-started/)  
-[Download SimpleLookups 1.1](/releases/1.1/SimpleLookups-1.1.zip) 
-[View Complete SimpleLookups v1.1 API Documentation](/documentation/)

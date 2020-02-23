@@ -18,8 +18,6 @@ Removed Features:
 
 Caching is enabled by default. You can turn it off by adding the following attribute to the  node in your web.config: enableCaching="false". Or, if you use the SimpleLookups.Initialize() method, there's now a set of overloads that deal with caching.
 
-Version 2.0b1 can be downloaded [here](/releases/2.0/SimpleLookups.2.0.0-beta1.zip).
-
-If you run into any issues at all, please email youdidthatwrong@russellwritescode.com and I'll take a look at the issue.
+If you run into any issues at all, please email support@simplelookups.com and I'll take a look at the issue.
 
 I have a few cleanup tasks to do over the next week or two, so expect the final version to be ready around August 16th. Source will also be released at that time.

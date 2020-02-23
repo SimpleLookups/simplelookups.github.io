@@ -18,8 +18,3 @@ Removed Features:
 
 Version 2.0 is now available on NuGet and on this site. Please install using Visual Studio, if possible. This way, your download counts!
 
-A few links for the lazy:
-[Getting Started with SimpleLookups](/getting-started/)  
-
-[Download SimpleLookups 2.0](/releases/2.0/SimpleLookups-2.0.zip) | [NuGet](http://www.nuget.org/packages/SimpleLookups/)  
-[View Complete SimpleLookups API Documentation](/documentation/)  

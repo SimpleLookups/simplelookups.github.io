@@ -16,8 +16,3 @@ New Features:
 
 Version 1.6 is now available on NuGet and on this site. I recommend NuGet, but to each their own.
 
-As typical, a few links for the lazy:
-[Getting Started with SimpleLookups](/getting-started/)  
-
-[Download SimpleLookups 1.6](/releases/1.6/SimpleLookups-1.6.zip) | [NuGet](http://www.nuget.org/packages/SimpleLookups/)  
-[View Complete SimpleLookups API Documentation](/documentation/)  

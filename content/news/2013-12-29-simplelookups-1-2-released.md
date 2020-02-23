@@ -22,7 +22,3 @@ Changed Features:
 
 The next release will be v1.5, and it will contain code structure changes and some other changes, namely the ability to configure SimpleLookups through app.config/web.config files.
 
-As typical, a few links for the lazy:  
-[Getting Started with SimpleLookups](/getting-started/)  
-[Download SimpleLookups 1.2](/releases/1.2/SimpleLookups-1.2.zip)  
-[View Complete SimpleLookups v1.2 API Documentation](/documentation/)  
