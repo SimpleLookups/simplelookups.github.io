@@ -3,12 +3,7 @@ author: "Russell Patterson"
 date: 2013-12-29 03:30:39+00:00
 draft: false
 title: SimpleLookups 1.2 Released
-
 url: /2013/12/simplelookups-1-2-released/
-categories:
-- Simple Lookups
-- SQL Server
-- Technical
 ---
 
 Today, I released SimpleLookups v1.2. This version includes the following changes: 
