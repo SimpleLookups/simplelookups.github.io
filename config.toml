@@ -37,7 +37,7 @@ pygmentscodefencesguesssyntax = true
     name = "Github"
     icon = "fab fa-github fa-2x"
     weight = 1
-    url = "https://github.com/rwpcpe/simple-lookups"
+    url = "https://github.com/simplelookups/"
 
 # Menu links
 [[menu.main]]
