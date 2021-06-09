@@ -1,0 +1,43 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="Simple Lookups"><meta name=description content="Simple Lookups - A simple .NET library for database lookup tables."><meta name=keywords content="developer"><meta name=twitter:card content="summary"><meta name=twitter:title content="SimpleLookups Class"><meta name=twitter:description content="This is the main static class of the SimpleLookups package.
+Namespace Import using SimpleLookups;  Jump To  Initialize (string) Initialize (string, bool, int) Initialize (string, string, string, string, string, string, bool) Initialize (string, string, string, string, string, string, bool, bool, int) AddConnectionString   Initialize (string) Initializes SimpleLookups with the default connection string.
+Signature static void Initialize( string defaultConnectionString );  Available 1.0+
+ Initialize (string, bool, int) Initializes SimpleLookups with the default connection string, and the provided cache settings."><meta property="og:title" content="SimpleLookups Class"><meta property="og:description" content="This is the main static class of the SimpleLookups package.
+Namespace Import using SimpleLookups;  Jump To  Initialize (string) Initialize (string, bool, int) Initialize (string, string, string, string, string, string, bool) Initialize (string, string, string, string, string, string, bool, bool, int) AddConnectionString   Initialize (string) Initializes SimpleLookups with the default connection string.
+Signature static void Initialize( string defaultConnectionString );  Available 1.0+
+ Initialize (string, bool, int) Initializes SimpleLookups with the default connection string, and the provided cache settings."><meta property="og:type" content="article"><meta property="og:url" content="/classes/simplelookups/"><meta property="article:section" content="classes"><meta property="article:published_time" content="2013-12-21T23:32:07+00:00"><meta property="article:modified_time" content="2013-12-21T23:32:07+00:00"><base href=/classes/simplelookups/><title>SimpleLookups Class · Simple Lookups</title><link rel=canonical href=/classes/simplelookups/><link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel=stylesheet><link rel=stylesheet href=https://use.fontawesome.com/releases/v5.11.2/css/all.css integrity=sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN crossorigin=anonymous><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin=anonymous><link rel=stylesheet href=/css/coder.min.a4f332213a21ce8eb521670c614470c58923aaaf385e2a73982c31dd7642decb.css integrity="sha256-pPMyITohzo61IWcMYURwxYkjqq84XipzmCwx3XZC3ss=" crossorigin=anonymous media=screen><link rel=icon type=image/png href=/img/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/img/favicon-16x16.png sizes=16x16><meta name=generator content="Hugo 0.83.1"></head><body class=colorscheme-light><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=/>Simple Lookups</a>
+<input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fas fa-bars"></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/download/>Download</a></li><li class=navigation-item><a class=navigation-link href=/news/>News</a></li><li class=navigation-item><a class=navigation-link href=/getting-started/>Getting Started</a></li><li class=navigation-item><a class=navigation-link href=/documentation/>Documentation</a></li><li class=navigation-item><a class=navigation-link href=/contact/>Contact</a></li></ul></section></nav><div class=content><section class="container page"><article><header><h1>SimpleLookups Class</h1></header><p>This is the main static class of the SimpleLookups package.</p><h5 id=namespace-import>Namespace Import</h5><pre><code>using SimpleLookups;
+</code></pre><h3 id=jump-to>Jump To</h3><ul><li><a href=#initialize-string>Initialize (string)</a></li><li><a href=#initialize-string-bool-int>Initialize (string, bool, int)</a></li><li><a href=#initialize-string-string-string-string-string-string-bool>Initialize (string, string, string, string, string, string, bool)</a></li><li><a href=#initialize-string-string-string-string-string-string-bool-bool-int>Initialize (string, string, string, string, string, string, bool, bool, int)</a></li><li><a href=#addconnectionstring>AddConnectionString</a></li></ul><hr><h3 id=initialize-string>Initialize (string)</h3><p>Initializes SimpleLookups with the default connection string.</p><h5 id=signature>Signature</h5><pre><code>static void Initialize(
+    string defaultConnectionString
+);
+</code></pre><h5 id=available>Available</h5><p>1.0+</p><hr><h3 id=initialize-string-bool-int>Initialize (string, bool, int)</h3><p>Initializes SimpleLookups with the default connection string, and the provided cache settings.</p><h5 id=signature-1>Signature</h5><pre><code>static void Initialize(
+    string defaultConnectionString, 
+    bool enableCaching, 
+    int cacheRefreshPeriod
+);
+</code></pre><h5 id=available-1>Available</h5><p>2.0+</p><hr><h3 id=initialize-string-string-string-string-string-string-bool>Initialize (string, string, string, string, string, string, bool)</h3><p>Initializes SimpleLookups with the default connection string, and the provided column prefixes.</p><h5 id=signature-2>Signature</h5><pre><code>static void Initialize(
+    string defaultConnectionString, 
+    string idColumnPrefix, 
+    string nameColumnPrefix, 
+    string descriptionColumnPrefix, 
+    string codeColumnPrefix, 
+    string activeColumnName, 
+    bool prefixColumnNamesWithTableName
+);
+</code></pre><h5 id=available-2>Available</h5><p>1.6+</p><hr><h3 id=initialize-string-string-string-string-string-string-bool-bool-int>Initialize (string, string, string, string, string, string, bool, bool, int)</h3><p>Initializes SimpleLookups with the default connection string, the provided column prefixes, and the provided cache settings.</p><h5 id=signature-3>Signature</h5><pre><code>static void Initialize(
+    string defaultConnectionString, 
+    string idColumnPrefix, 
+    string nameColumnPrefix, 
+    string descriptionColumnPrefix, 
+    string codeColumnPrefix, 
+    string activeColumnName, 
+    bool prefixColumnNamesWithTableName, 
+    bool enableCaching, 
+    int cacheRefreshPeriod
+);
+</code></pre><h5 id=available-3>Available</h5><p>2.0+</p><hr><h3 id=addconnectionstring>AddConnectionString</h3><p>Adds another connection string that can be used by the CRUD operations. You can reference the connection string by the connectionName you&rsquo;ve provided here, in the operations on LookupManager.</p><h5 id=signature-4>Signature</h5><pre><code>static void AddConnectionString(
+    string connectionName, 
+    string connectionString
+);
+</code></pre><h5 id=available-4>Available</h5><p>1.0+</p></article></section></div><footer class=footer><section class=container>© 2013 - 2021
+Simple Lookups</section></footer></main></body></html>

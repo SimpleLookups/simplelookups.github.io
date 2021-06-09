@@ -1,0 +1,27 @@
+﻿<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified" version="1.6.0.0">
+	<xs:element name="simpleLookups">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="connectionStrings" minOccurs="1" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element minOccurs="1" maxOccurs="unbounded" name="connectionString">
+								<xs:complexType>
+									<xs:attribute name="connectionStringName" type="xs:string" use="required" />
+									<xs:attribute name="isDefault" type="xs:boolean" use="optional" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute type="xs:string" name="idColumnSuffix" use="optional" />
+			<xs:attribute type="xs:string" name="nameColumnSuffix" use="optional" />
+			<xs:attribute type="xs:string" name="descriptionColumnSuffix" use="optional" />
+			<xs:attribute type="xs:string" name="codeColumnSuffix" use="optional" />
+			<xs:attribute type="xs:string" name="activeColumnName" use="optional" />
+			<xs:attribute type="xs:string" name="prefixColumnsWithTableName" use="optional" />
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

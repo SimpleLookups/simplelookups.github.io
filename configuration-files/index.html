@@ -1,0 +1,45 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="Simple Lookups"><meta name=description content="Simple Lookups - A simple .NET library for database lookup tables."><meta name=keywords content="developer"><meta name=twitter:card content="summary"><meta name=twitter:title content="Configuration Files"><meta name=twitter:description content="One of the new features in SimpleLookups 1.5 and above is the ability to initialize your database connection strings in the web.config file. The schema file for the config file can be found here:
+v1.5.x
+v1.6.x
+v2.0.x
+To use this feature, follow these steps:
+ Add the following to the <configSections> element, inside of the main <configuration> element, making sure that the version number matches the version you have:  <configSections> <section name=&#34;simpleLookups&#34; type=&#34;SimpleLookups."><meta property="og:title" content="Configuration Files"><meta property="og:description" content="One of the new features in SimpleLookups 1.5 and above is the ability to initialize your database connection strings in the web.config file. The schema file for the config file can be found here:
+v1.5.x
+v1.6.x
+v2.0.x
+To use this feature, follow these steps:
+ Add the following to the <configSections> element, inside of the main <configuration> element, making sure that the version number matches the version you have:  <configSections> <section name=&#34;simpleLookups&#34; type=&#34;SimpleLookups."><meta property="og:type" content="article"><meta property="og:url" content="/configuration-files/"><meta property="article:section" content><meta property="article:published_time" content="2014-02-20T03:19:47+00:00"><meta property="article:modified_time" content="2014-02-20T03:19:47+00:00"><base href=/configuration-files/><title>Configuration Files · Simple Lookups</title><link rel=canonical href=/configuration-files/><link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel=stylesheet><link rel=stylesheet href=https://use.fontawesome.com/releases/v5.11.2/css/all.css integrity=sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN crossorigin=anonymous><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin=anonymous><link rel=stylesheet href=/css/coder.min.a4f332213a21ce8eb521670c614470c58923aaaf385e2a73982c31dd7642decb.css integrity="sha256-pPMyITohzo61IWcMYURwxYkjqq84XipzmCwx3XZC3ss=" crossorigin=anonymous media=screen><link rel=icon type=image/png href=/img/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/img/favicon-16x16.png sizes=16x16><meta name=generator content="Hugo 0.83.1"></head><body class=colorscheme-light><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=/>Simple Lookups</a>
+<input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fas fa-bars"></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/download/>Download</a></li><li class=navigation-item><a class=navigation-link href=/news/>News</a></li><li class=navigation-item><a class=navigation-link href=/getting-started/>Getting Started</a></li><li class=navigation-item><a class=navigation-link href=/documentation/>Documentation</a></li><li class=navigation-item><a class=navigation-link href=/contact/>Contact</a></li></ul></section></nav><div class=content><section class="container page"><article><header><h1>Configuration Files</h1></header><p>One of the new features in SimpleLookups 1.5 and above is the ability to initialize your database connection strings in the web.config file. The schema file for the config file can be found here:</p><p><a href=/schemas/1.5/SimpleLookups.xsd>v1.5.x</a><br><a href=/schemas/1.6/SimpleLookups.xsd>v1.6.x</a><br><a href=/schemas/2.0/SimpleLookups.xsd>v2.0.x</a></p><p>To use this feature, follow these steps:</p><ol><li>Add the following to the <code>&lt;configSections></code> element, inside of the main <code>&lt;configuration></code> element, making sure that the version number matches the version you have:</li></ol><div class=highlight><pre style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>&lt;configSections&gt;
+  &lt;section 
+      name=&#34;simpleLookups&#34; 
+      type=&#34;SimpleLookups.Configuration.SimpleLookupsConfigurationSection, SimpleLookups, Culture=neutral, PublicKeyToken=8f18859ef6ffa5ed&#34;/&gt;
+&lt;/configSections&gt;
+</code></pre></div><ol start=2><li><p>Add any connection strings as you would normally. See <a href=https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ef/connection-strings>Connection Strings</a> for more information about this.</p></li><li><p>Add the <code>&lt;simpleLookups></code> element inside of the main <code>&lt;configuration></code> element. Like so:</p></li></ol><div class=highlight><pre style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>&lt;simpleLookups&gt;
+  &lt;connectionStrings&gt;
+    &lt;connectionString 
+        isDefault=&#34;true&#34; 
+        connectionStringName=&#34;SimpleLookups&#34; /&gt;
+    &lt;connectionString 
+         connectionStringName=&#34;Other&#34;/&gt;
+  &lt;/connectionStrings&gt;
+&lt;/simpleLookups&gt;
+</code></pre></div><p>The <code>connectionStringName</code> attribute is the name of a connection string that has been added. Note: If more than one connection string is defined, one of them must have <code>isDefault="true"</code>. As of v1.6, you can also specify the column suffixes that are used, and whether or not the table name is prefixed to the columns in the table. Additionally, as of v2.0, you can set up caching by specifying those settings. The Cache Refresh Period is in seconds. Here&rsquo;s that in action:</p><div class=highlight><pre style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>&lt;simpleLookups 
+    idColumnSuffix=&#34;Id4&#34; 
+    nameColumnSuffix=&#34;Name4&#34; 
+    descriptionColumnSuffix=&#34;Description4&#34; 
+    codeColumnSuffix=&#34;Code4&#34; 
+    activeColumnName=&#34;Active4&#34; 
+    prefixColumnsWithTableName=&#34;false&#34; 
+    enableCaching=&#34;true&#34; 
+    cacheRefreshPeriod=&#34;1800&#34;&gt;
+  &lt;connectionStrings&gt;
+    &lt;connectionString 
+        isDefault=&#34;true&#34; 
+        connectionStringName=&#34;SimpleLookups&#34; /&gt;
+    &lt;connectionString 
+        connectionStringName=&#34;Other&#34;/&gt;
+  &lt;/connectionStrings&gt;
+&lt;/simpleLookups&gt;
+</code></pre></div><p>That&rsquo;s all there is to it.</p></article></section></div><footer class=footer><section class=container>© 2013 - 2021
+Simple Lookups</section></footer></main></body></html>
